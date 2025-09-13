@@ -4,8 +4,163 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="reset.css" rel="stylesheet" />
-    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <title>이준엽</title>
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home">홈</a></li>
+          <li><a href="#about">소개</a></li>
+          <li><a href="#projects">프로젝트</a></li>          
+          <li><a href="#contact">연락처</a></li>
+        </ul>
+      </nav>
+      <div class="bar-bg">
+            <span class="bar-ing"></span>
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="home-content">
+          <img src="images/profile.jpg" alt="프로필 이미지" class="profile-img"/>
+          <p id="typing-title" class="txt-title">
+            <span id="typing-text"></span><span class="cursor"></span></p>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>소개</h2>
+        <dl class="about-info">
+          <div>
+            <dt>이름</dt>
+            <dd>이준엽</dd>
+          </div>
+          <div>
+            <dt>생년월일</dt>
+            <dd>2003.04.11</dd>
+          </div>
+          <div>
+            <dt>MBTI</dt>
+            <dd>ENTJ</dd>
+          </div>
+          <div>
+            <dt>학과</dt>
+            <dd>자유전공학부<br>(컴퓨터공학, 통계학)</dd>
+          </div>
+        </dl>
+
+        <h2>취미</h2>
+        <div class="hobby-container">
+          
+
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="images/boardgame.jpg" alt="보드게임 이미지">
+                      <p class="card-title">보드게임</p>
+                  </div>
+                  <div class="flip-card-back">
+                      <h3>보드게임 🎲</h3>
+                      <p>보드게임 동아리에 일주일에 3번씩 참여할 만큼 열정적입니다.<br>가장 좋아하는 보드게임은 마피아 장르인 <h4>'레지스탕스: 아발론'</h4>입니다.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                      <img src="images/baseball.jpg" alt="야구 이미지">
+                      <p class="card-title">야구</p>
+                  </div>
+                  <div class="flip-card-back">
+                      <h3>야구 ⚾</h3>
+                      <p>롯데 자이언츠의 열성적인 팬입니다. 야구를 관람할 때 누구보다 열정적으로 응원합니다.<br><h4>최! 강! 롯! 데!</h4></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </section>
+
+      <section id="projects">
+        <h2>프로젝트</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="images/thefoxintheforest.png" alt="숲 속의 여우 이미지" />
+            <div class="project-content">
+                <h4>숲 속의 여우 (The Fox in the Forest)</h4>
+                <dl class="project-details">
+                  <dt>기간</dt>
+                  <dd>2025.05 ~ 2025.06</dd>
+                  
+                  <dt>설명</dt>
+                  <dd>2인용 카드 게임 '숲 속의 여우'의 규칙을 C++로 구현하고, Windows Forms를 이용해 사용자가 직접 플레이할 수 있도록 시각화한 데스크톱 애플리케이션입니다.</dd>
+                  
+                  <dt>기술 스택</dt>
+                  <dd>
+                      <div class="tech-stack">
+                          <span class="tag">C++</span>
+                          <span class="tag">Windows Forms</span>
+                      </div>
+                  </dd>
+                </dl>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/NYPC.png" alt="NYPC 이미지" />
+            <div class="project-content">
+              <h4>NYPC Code Battle</h4>
+              <dl class="project-details">
+                <dt>기간</dt>
+                <dd>2025.08</dd>
+                <dt>설명</dt>
+                <dd>NEXON Youth Programming Challenge(NYPC)의 Code Battle에 참가하여, 주어진 게임 환경을 분석하고 최적의 전략을 수행하는 AI를 C++로 개발했습니다.</dd>
+                <dt>기술 스택</dt>
+                <dd>
+                    <div class="tech-stack">
+                        <span class="tag">C++</span>
+                        <span class="tag">AI</span>
+                    </div>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <h2>연락처</h2>
+      <ul class="link-list">
+        <li>
+          <a href="https://github.com/jun-0411" target="_blank" class="link-item">
+            <img src="images/github.png" alt="깃허브 사이트로 이동"/>
+            <span>github</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jun_411_/" target="_blank" class="link-item">
+            <img src="images/instagram.webp" alt="인스타그램 사이트로 이동"/>
+            <span>instagram</span>
+          </a>
+        </li>
+      </ul>
+
+      <dl class="contact-list">
+          <div>
+            <dt>이메일</dt>
+            <dd>jun411411@gmail.com</dd>
+          </div>
+          <div>
+            <dt>전화번호</dt>
+            <dd>010-5578-5850</dd>
+          </div>
+      </dl>
+
+      <p class="copyright">@ 2025 by JunYeop.</p>
+    </footer>
+  </body>
   <script src="index.js"></script>
 </html>
